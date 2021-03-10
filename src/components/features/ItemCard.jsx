@@ -13,7 +13,6 @@ const Excerpt = styled.h4`
 	color: #000000;
 	font-weight: 700;
 	font-size: 17px;
-	margin-top: 200px;
 `;
 
 const ItemCard = ({ card }) => {
