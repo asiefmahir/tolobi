@@ -9,7 +9,7 @@ const H6 = styled.h6`
 
 const Container = styled.div`
 	text-align: center;
-	margin-top: 5rem;
+	margin-top: 4rem;
 `;
 
 const H3 = styled.h3`
@@ -19,6 +19,7 @@ const CardHolder = styled.div`
 	display: flex;
 	align-items:center;
 	justify-content:space-around;
+	margin-top:1rem;
 `;
 const Features = ({ features }) => {
 	return (
