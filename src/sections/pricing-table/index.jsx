@@ -82,7 +82,7 @@ const PricingTable = ({ datas, info }) => {
 				))}
 
 				<tr>
-					<td className="table-row-item display-flex">
+					<td className="table-row-item">
 						<p>{info.title}</p>
 						<p>
 							{" "}
