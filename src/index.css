@@ -104,3 +104,34 @@ body {
 	stroke-dasharray: 229px;
 	stroke-dashoffset: -103px;
 }
+
+.greenish-tr {
+	background-color: #00a857;
+}
+
+.greenish-th {
+	background-color: #00a857;
+}
+
+.active-th {
+	background-color: #ffffff;
+}
+.active-tr {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color: #ffffff;
+}
+
+.top-left {
+	border-top-left-radius: 10px;
+}
+
+.top-righ {
+	border-top-right-radius: 10px;
+}
+.bottom-left {
+	border-bottom-left-radius: 10px;
+}
+
+.bottom-right {
+	border-bottom-left-radius: 10px;
+}

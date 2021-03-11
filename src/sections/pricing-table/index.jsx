@@ -52,7 +52,6 @@ const TableRowHeading = styled.h2`
 `;
 
 const PricingTable = ({ datas, info }) => {
-	const [active, setActive] = useState(false);
 	return (
 		<Table className='container'>
 			<tr>
@@ -74,8 +73,6 @@ const PricingTable = ({ datas, info }) => {
 				{datas.map((data, i) => (
 					<Row
 						key={i}
-						active={active}
-						setActive={setActive}
 						data={data}
 						index={i}
 					/>

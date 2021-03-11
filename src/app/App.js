@@ -30,7 +30,7 @@ const datas = [
   },
   {
     title: `Access to Tolobi's Dashboard`,
-    checkers: ['tick', 'cross', 'tick']
+    checkers: ['tick', 'tick', 'tick']
   },
   {
     title: `Access to Tolobi's Dashboard`,
