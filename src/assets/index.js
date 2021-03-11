@@ -10,7 +10,9 @@ import cross from './icons/cross.svg'
 import nonActiveTick from './icons/nonActiveTick.svg'
 import ActiveAlert from './icons/ActiveAlert.svg'
 import timelineIcon from './icons/timelineIcon.svg'
-
+import workStyle from './icons/workStyle.svg'
+import plusIcon from './icons/plusIcon.svg'
+import minusIcon from './icons/minusIcon.svg'
 
 const images = {
     bgImage,
@@ -26,7 +28,10 @@ const icons = {
     alert,
     nonActiveTick,
     ActiveAlert,
-    timelineIcon
+    timelineIcon,
+    workStyle,
+    plusIcon,
+    minusIcon
 }
 
 export { images, icons }

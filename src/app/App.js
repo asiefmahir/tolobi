@@ -6,6 +6,7 @@ import Features from '../sections/features';
 import PricingTable from '../sections/pricing-table';
 import Timeline from '../sections/timeline';
 import CompetitorTable from '../sections/competitor-table';
+import WhyUseTolobi from '../sections/why-use-tolibo';
 
 const features = [
   {
@@ -81,6 +82,60 @@ const tableDataOfCompetitor = [
   }
 ]
 
+const whyUseTolobi = {
+  title: 'Why Our Clients',
+  subTitle: 'Work With Us',
+  bgImage: images.bgImage,
+  cards: [
+    {
+      icon: icons.workStyle,
+      title: 'Unbeatable Pricing.',
+      excerpt: 'Transparent, Low, Fixed Fee For Any Rental Unit.'
+    },
+    {
+      icon: icons.workStyle,
+      title: 'No Exclusivity.',
+      excerpt: 'Transparent, Low, Fixed Fee For Any Rental Unit.'
+    },
+    {
+      icon: icons.workStyle,
+      title: 'Results Driven.',
+      excerpt: 'Transparent, Low, Fixed Fee For Any Rental Unit.'
+    },
+    {
+      icon: icons.workStyle,
+      title: 'Rental Focused.',
+      excerpt: 'Transparent, Low, Fixed Fee For Any Rental Unit.'
+    }
+  ]
+}
+
+const faqData = {
+  title: 'Frequently Asked Questions',
+  items: [
+    {
+      title: `What's included in the Tolobi Leasing service?`,
+      excerpt: 'Our Leasing service includes marketing your listing on over 40 websites, on-demand Self-Tours, quick and thorough tenant screening, and lease preparation. With our Leasing service, you can get high-quality renters for a one-time leasing fee of 50-75% of the 1st month’s rent (depending on the region).'
+    },
+    {
+      title: `What's included in the Tolobi Leasing service 2?`,
+      excerpt: 'Our Leasing service includes marketing your listing on over 40 websites, on-demand Self-Tours, quick and thorough tenant screening, and lease preparation. With our Leasing service, you can get high-quality renters for a one-time leasing fee of 50-75% of the 1st month’s rent (depending on the region).'
+    },
+    {
+      title: `What's included in the Tolobi Leasing service 3?`,
+      excerpt: 'Our Leasing service includes marketing your listing on over 40 websites, on-demand Self-Tours, quick and thorough tenant screening, and lease preparation. With our Leasing service, you can get high-quality renters for a one-time leasing fee of 50-75% of the 1st month’s rent (depending on the region).'
+    },
+    {
+      title: `What's included in the Tolobi Leasing service 4?`,
+      excerpt: 'Our Leasing service includes marketing your listing on over 40 websites, on-demand Self-Tours, quick and thorough tenant screening, and lease preparation. With our Leasing service, you can get high-quality renters for a one-time leasing fee of 50-75% of the 1st month’s rent (depending on the region).'
+    },
+    {
+      title: `What's included in the Tolobi Leasing service 5?`,
+      excerpt: 'Our Leasing service includes marketing your listing on over 40 websites, on-demand Self-Tours, quick and thorough tenant screening, and lease preparation. With our Leasing service, you can get high-quality renters for a one-time leasing fee of 50-75% of the 1st month’s rent (depending on the region).'
+    },
+  ]
+}
+
 function App() {
   return (
     <div className="App">
@@ -88,6 +143,7 @@ function App() {
       <Features features={features} />
       <PricingTable datas={datas} info={info} />
       <CompetitorTable data={tableDataOfCompetitor} />
+      <WhyUseTolobi data={whyUseTolobi} />
       {/* <Timeline /> */}
     </div>
   );
