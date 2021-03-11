@@ -18,12 +18,12 @@ const features = [
   },
   {
     type: 'time',
-    icon: icons.documentTime,
+    icon: icons.dollorBag,
     excerpt: 'Save valuable time from the rental process'
   },
   {
     type: 'time',
-    icon: icons.documentTime,
+    icon: icons.peopleIcon,
     excerpt: 'Save valuable time from the rental process'
   }
 ]

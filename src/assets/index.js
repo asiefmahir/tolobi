@@ -13,6 +13,8 @@ import timelineIcon from './icons/timelineIcon.svg'
 import workStyle from './icons/workStyle.svg'
 import plusIcon from './icons/plusIcon.svg'
 import minusIcon from './icons/minusIcon.svg'
+import dollorBag from './icons/dollorBag.svg'
+import peopleIcon from './icons/peopleIcon.svg'
 import messageIcon from './icons/messageIcon.svg'
 
 
@@ -34,6 +36,8 @@ const icons = {
     workStyle,
     plusIcon,
     minusIcon,
+    dollorBag,
+    peopleIcon,
     messageIcon
 }
 
