@@ -8,6 +8,8 @@ import alert from './icons/alert.svg'
 import cross from './icons/cross.svg'
 import nonActiveTick from './icons/nonActiveTick.svg'
 import ActiveAlert from './icons/ActiveAlert.svg'
+import timelineIcon from './icons/timelineIcon.svg'
+
 
 const images = {
     bgImage
@@ -21,7 +23,8 @@ const icons = {
     cross,
     alert,
     nonActiveTick,
-    ActiveAlert
+    ActiveAlert,
+    timelineIcon
 }
 
 export { images, icons }

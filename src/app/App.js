@@ -1,9 +1,10 @@
 import '../App.css';
-import Hero from '../components/hero'
+import Hero from '../sections/hero'
 
 import { images, icons } from '../assets'
-import Features from '../components/features';
-import PricingTable from '../components/pricing-table';
+import Features from '../sections/features';
+import PricingTable from '../sections/pricing-table';
+import Timeline from '../sections/timeline';
 
 const features = [
   {
@@ -61,6 +62,7 @@ function App() {
       <Hero image={images.bgImage} />
       <Features features={features} />
       <PricingTable datas={datas} info={info} />
+      {/* <Timeline /> */}
     </div>
   );
 }
