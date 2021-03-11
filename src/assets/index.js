@@ -13,6 +13,8 @@ import timelineIcon from './icons/timelineIcon.svg'
 import workStyle from './icons/workStyle.svg'
 import plusIcon from './icons/plusIcon.svg'
 import minusIcon from './icons/minusIcon.svg'
+import messageIcon from './icons/messageIcon.svg'
+
 
 const images = {
     bgImage,
@@ -31,7 +33,8 @@ const icons = {
     timelineIcon,
     workStyle,
     plusIcon,
-    minusIcon
+    minusIcon,
+    messageIcon
 }
 
 export { images, icons }
