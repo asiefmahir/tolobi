@@ -1,10 +1,8 @@
-
-
 import HeroWrapper from "./HeroWrapper";
 import Overlay from "./Overlay";
 import Heading from "./Heading";
 import Span from "./Span";
-import Paragraph from "./Paragraph"
+import Paragraph from "./Paragraph";
 
 const Hero = ({ image }) => {
 	return (
