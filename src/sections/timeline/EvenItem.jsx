@@ -11,7 +11,7 @@ const EvenItem = ({ rowData, index }) => {
 					<circle cx='70' cy='70' r='70'></circle>
 					<circle cx='70' cy='70' r='70'></circle>
 				</svg>
-				<div class='timeline__middle-icon'>
+				<div class='timeline__middle-icon odd-item-middle'>
 					<div class='round'>{index + 1}</div>
 				</div>
 			</div>
