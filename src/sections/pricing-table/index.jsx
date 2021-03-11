@@ -27,7 +27,10 @@ const TableHeadItem = styled.th`
 	padding: 2rem 2rem 0.5rem 2rem;
 `;
 
-const TableHeadItemActive = styled.td``;
+const TableHeadItemActive = styled.td`
+	font-size: 16px;
+	font-weight: 700;
+`;
 const Button = styled.button`
 	width: 7.875rem;
 	height: 2.25rem;
