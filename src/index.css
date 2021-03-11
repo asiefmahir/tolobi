@@ -41,7 +41,7 @@ body {
 }
 .timeline{
     display:flex;
-    margin-top:7.8rem;
+    margin-top:8.8rem;
 }
 .timeline__content{
     width:33%;
@@ -66,7 +66,7 @@ body {
 }
 .svg-even{
     position:absolute;
-	margin-left:136px;
+	margin-left:122px;
 }
 .svg-even circle{
     height:100%;
@@ -92,7 +92,7 @@ body {
 }
 .timeline__middle-icon{
     margin-top:-4px;
-	margin-left:130px;
+	margin-left:122px;
 }
 .round{
     width:100px;
@@ -113,7 +113,7 @@ body {
 
 .svg-odd{
     position:absolute;
-	margin-left:136px;
+	margin-left:122px;
 }
 .svg-odd circle{
     height:100%;
