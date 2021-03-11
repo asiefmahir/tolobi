@@ -48,6 +48,8 @@ const TableRowItem = styled.td`
 `;
 const TableRowHeadingActive = styled.h2`
 	color: white;
+	font-size:16px;
+	font-weight:700;
 `;
 const TableRowHeading = styled.h2`
 	font-size: 16px;

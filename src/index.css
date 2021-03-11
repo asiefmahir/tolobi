@@ -135,3 +135,9 @@ body {
 .bottom-right {
 	border-bottom-left-radius: 10px;
 }
+
+.display-flex{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}

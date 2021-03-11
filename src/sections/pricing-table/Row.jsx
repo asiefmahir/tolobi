@@ -9,10 +9,6 @@ const Row = ({ data, index }) => {
 
 	return (
 		<tr
-			// style={{
-			// 	backgroundColor: active ? "#ffffff" : "#00A857",
-			// 	boxShadow: active && "0px 4px 4px rgba(0, 0, 0, 0.25)",
-			// }}
 			className={active ? "active-tr" : "greenish-tr"}
 			onMouseOver={() => {
 				setActive(true);
@@ -23,24 +19,12 @@ const Row = ({ data, index }) => {
 				console.log(active);
 			}}>
 			<th
-				// style={{
-				// 	display: "flex",
-				// 	backgroundColor: active ? "#ffffff" : "#00A857",
-				// }}'
-				style={{ display: "flex" }}
-				className={active ? "active-th" : "greenish-th"}>
+				className={active ? "display-flex active-th" : "display-flex greenish-th"}>
 				<span>{title}</span>{" "}
 				<img src={active ? icons.ActiveAlert : icons.alert} alt={title} />
 			</th>
 			{checkers.map((value, i) => (
 				<th
-					// style={{
-					// 	borderTopLeftRadius: index === 0 && i === 0 && "10px",
-					// 	borderBottomRightRadius:
-					// 		index === 0 && i === checkers.length - 1 && "10px",
-					// 	backgroundColor: i % 2 === 0 ? "#ffffff" : "#00A857",
-					// }}
-
 					className={i % 2 === 0 && "active-th"}>
 					{value === "tick" ? (
 						<img
