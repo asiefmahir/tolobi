@@ -1,4 +1,5 @@
 import bgImage from './images/hero-bg.jpg'
+import logo from './images/logo.svg'
 
 import documentTime from './icons/documentTime.svg'
 import cost from './icons/cost.svg'
@@ -12,7 +13,8 @@ import timelineIcon from './icons/timelineIcon.svg'
 
 
 const images = {
-    bgImage
+    bgImage,
+    logo
 }
 
 const icons = {
