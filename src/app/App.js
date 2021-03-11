@@ -7,6 +7,7 @@ import PricingTable from '../sections/pricing-table';
 import Timeline from '../sections/timeline';
 import CompetitorTable from '../sections/competitor-table';
 import WhyUseTolobi from '../sections/why-use-tolibo';
+import FAQ from '../sections/faq';
 
 const features = [
   {
@@ -145,6 +146,7 @@ function App() {
       <CompetitorTable data={tableDataOfCompetitor} />
       <WhyUseTolobi data={whyUseTolobi} />
       {/* <Timeline /> */}
+      <FAQ data={faqData} />
     </div>
   );
 }
