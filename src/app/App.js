@@ -1,4 +1,3 @@
-import '../App.css';
 import Hero from '../sections/hero'
 
 import { images, icons } from '../assets'
@@ -136,7 +135,50 @@ const faqData = {
       excerpt: 'Our Leasing service includes marketing your listing on over 40 websites, on-demand Self-Tours, quick and thorough tenant screening, and lease preparation. With our Leasing service, you can get high-quality renters for a one-time leasing fee of 50-75% of the 1st month’s rent (depending on the region).'
     },
   ]
-}
+};
+
+const timelineData = [
+  {
+    icon: icons.timelineIcon,
+    title: 'Start Property Advertising',
+    excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+  },
+  {
+    icon: icons.timelineIcon,
+    title: 'Start Property Advertising 2',
+    excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+  },
+  {
+    icon: icons.timelineIcon,
+    title: 'Start Property Advertising',
+    excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+  },
+  {
+    icon: icons.timelineIcon,
+    title: 'Start Property Advertising 3',
+    excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+  },
+  {
+    icon: icons.timelineIcon,
+    title: 'Start Property Advertising 4',
+    excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+  },
+  {
+    icon: icons.timelineIcon,
+    title: 'Start Property Advertising 5',
+    excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+  },
+  {
+    icon: icons.timelineIcon,
+    title: 'Start Property Advertising 6',
+    excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+  },
+  {
+    icon: icons.timelineIcon,
+    title: 'Start Property Advertising 7',
+    excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+  },
+]
 
 function App() {
   return (
@@ -146,7 +188,7 @@ function App() {
       <PricingTable datas={datas} info={info} />
       <CompetitorTable data={tableDataOfCompetitor} />
       <WhyUseTolobi data={whyUseTolobi} />
-      {/* <Timeline /> */}
+      <Timeline data={timelineData} />
       <FAQ data={faqData} />
       <Subscription />
     </div>

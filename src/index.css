@@ -120,6 +120,7 @@ body {
 .active-tr {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color: #ffffff;
+	border-radius: 10px;
 	transform: scale(1);
 }
 
@@ -142,7 +143,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 }
 .table-row-item {
 	text-align: center;
@@ -155,7 +155,7 @@ body {
 	text-align: center;
 
 	padding: 1rem;
-	font-size:12px;
+	font-size: 12px;
 	padding: 2rem;
 	font-size: 12px;
 }
@@ -163,7 +163,6 @@ body {
 .non-active-faq-item {
 	box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
 	background: #ffffff;
-
 }
 
 .active-faq-item {

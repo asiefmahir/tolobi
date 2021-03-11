@@ -42,8 +42,6 @@ const Button = styled.button`
 	margin-top: 1rem;
 `;
 
-
-
 const TableRowHeadingActive = styled.h2`
 	color: white;
 	font-size:16px;

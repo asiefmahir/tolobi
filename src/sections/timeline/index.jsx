@@ -10,7 +10,7 @@ const TimelineContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: blue;
+	// background-color: blue;
 `;
 
 const Timeline = ({ data }) => {
@@ -19,7 +19,11 @@ const Timeline = ({ data }) => {
 			<H3>Tolobi Work</H3>
 			<H6>How Our Process Works</H6>
 			{data.map((d, i) =>
-				i % 2 === 0 ? <OddItem rowData={d} /> : <EvenItem rowData={d} />,
+				i % 2 === 0 ? (
+					<OddItem rowData={d} index={i} />
+				) : (
+					<EvenItem rowData={d} index={i} />
+				),
 			)}
 		</TimelineContainer>
 	);

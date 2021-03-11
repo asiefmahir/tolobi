@@ -1,6 +1,6 @@
 import { icons } from "../../assets";
 
-const EvenItem = ({ rowData }) => {
+const EvenItem = ({ rowData, index }) => {
 	const { title, excerpt, icon } = rowData;
 	return (
 		<section class='timeline'>
@@ -12,7 +12,7 @@ const EvenItem = ({ rowData }) => {
 					<circle cx='70' cy='70' r='70'></circle>
 				</svg>
 				<div class='timeline__middle-icon'>
-					<div class='round'>2</div>
+					<div class='round'>{index + 1}</div>
 				</div>
 			</div>
 			<div class='timeline__content'>
