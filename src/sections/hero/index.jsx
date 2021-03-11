@@ -43,6 +43,7 @@ const Overlay = styled.div`
 		rgba(0, 0, 0, 0.74) 25.65%
 	);
 	// transform: matrix(-1, 0, 0, 1, 0, 0);
+	display:flex;
 `;
 
 const Hero = ({ image }) => {

@@ -16,8 +16,8 @@ import minusIcon from './icons/minusIcon.svg'
 import dollorBag from './icons/dollorBag.svg'
 import peopleIcon from './icons/peopleIcon.svg'
 import messageIcon from './icons/messageIcon.svg'
-
-
+import downArrow from './icons/downArrow.svg'
+import circle from './icons/circle.svg'
 const images = {
     bgImage,
     logo
@@ -38,7 +38,9 @@ const icons = {
     minusIcon,
     dollorBag,
     peopleIcon,
-    messageIcon
+    messageIcon,
+    downArrow,
+    circle
 }
 
 export { images, icons }

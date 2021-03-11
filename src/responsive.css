@@ -1,49 +1,69 @@
-@media (max-width:1292px){
+@media only screen and (max-width:1292px){
     .timeline__curve-section::after{
         top:-172px;
     }
 }
 
-@media (max-width:1160px){
+@media only screen and (max-width:1168px){
+    .svg-even circle:nth-child(2){
+        stroke-dasharray: 218px;
+        stroke-dashoffset: -332px;
+    }
+    .svg-odd circle:nth-child(2){
+        stroke-dasharray: 223px;
+        stroke-dashoffset: -108px;
+    }
+}
+
+@media  (max-width:1160px){
+    .svg-even circle:nth-child(2){
+        stroke-dasharray: 218px;
+        stroke-dashoffset: -332px;
+    }
+    .svg-odd circle:nth-child(2){
+        stroke-dasharray: 223px;
+        stroke-dashoffset: -108px;
+    }
+
     .timeline__curve-section::after{
         top:-192px;
     }
 }
 
-@media (max-width:1140px){
+@media only screen and (max-width:1140px){
     .timeline__curve-section::after{
         top:-213px;
     }
 }
 
 
-@media (max-width:1130px){
+@media only screen and (max-width:1130px){
     .timeline__curve-section::after{
         top:-211px;
     }
 }
 
 
-@media (max-width:1013px){
+@media only screen and (max-width:1013px){
     .timeline__curve-section::after{
         top:-244px;
     }
 }
 
-@media (max-width:984px){
+@media only screen and (max-width:984px){
     .timeline__curve-section::after{
         top:-264px;
     }
 }
 
-@media (max-width:980px){
+@media only screen and (max-width:980px){
     .timeline__curve-section::after{
         top:-285px;
     }
 }
 
 
-@media (max-width:958px){
+@media only screen and (max-width:958px){
     .timeline__curve-section::after{
         top:-306px;
     }
