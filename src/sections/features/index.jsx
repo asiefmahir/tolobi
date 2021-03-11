@@ -1,26 +1,9 @@
-import styled from "styled-components";
-
 import ItemCard from "./ItemCard";
+import Container from "./Container";
+import CardHolder from "./CardHolder";
+import H6 from "./H6";
+import H3 from "./H3";
 
-const H6 = styled.h6`
-	font-weight: 500;
-	color: #10ad62;
-`;
-
-const Container = styled.div`
-	text-align: center;
-	margin-top: 4rem;
-`;
-
-const H3 = styled.h3`
-	margin-top: 0.5rem;
-`;
-const CardHolder = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	margin-top: 1.8rem;
-`;
 const Features = ({ features }) => {
 	return (
 		<Container>

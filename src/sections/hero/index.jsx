@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 const HeroWrapper = styled.div`
 	background: url(${(props) => props.url});
@@ -42,9 +43,13 @@ const Overlay = styled.div`
 		rgba(0, 0, 0, 0.74) 0.05%,
 		rgba(0, 0, 0, 0.74) 25.65%
 	);
-	// transform: matrix(-1, 0, 0, 1, 0, 0);
 	display:flex;
 `;
+import HeroWrapper from "./HeroWrapper";
+import Overlay from "./Overlay";
+import Heading from "./Heading";
+import Span from "./Span";
+import Paragraph from "./Paragraph"
 
 const Hero = ({ image }) => {
 	return (

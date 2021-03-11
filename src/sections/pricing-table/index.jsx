@@ -44,10 +44,9 @@ const Button = styled.button`
 
 const TableRowHeadingActive = styled.h2`
 	color: white;
-	font-size:16px;
-	font-weight:700;
+	font-size: 16px;
+	font-weight: 700;
 `;
-
 
 const TableRowHeading = styled.h2`
 	font-size: 16px;
@@ -55,6 +54,7 @@ const TableRowHeading = styled.h2`
 `;
 
 const PricingTable = ({ datas, info }) => {
+	const [active, setActive] = useState(false);
 	return (
 		<Table className='container'>
 			<tr>
@@ -74,26 +74,26 @@ const PricingTable = ({ datas, info }) => {
 			</tr>
 			<TableBody>
 				{datas.map((data, i) => (
-					<Row
-						key={i}
-						data={data}
-						index={i}
-					/>
+					<Row key={i} data={data} index={i} />
 				))}
 
-				<tr>
-					<td className="table-row-item">
+				<tr
+					onMouseOver={() => setActive(true)}
+					onMouseLeave={() => setActive(false)}
+					className={active && "active-tr"}>
+					<td className='table-row-item'>
 						<p>{info.title}</p>
 						<p>
 							{" "}
-							<span>{info.subTitle}</span> <img src={icons.alert} alt='' />
+							<span>{info.subTitle}</span>{" "}
+							<img src={active ? icons.ActiveAlert : icons.alert} alt='' />
 						</p>
 					</td>
 					{info?.data.map((d, i) => (
 						<td
-							className="table-row-item"
+							className='table-row-item'
 							style={{
-								borderBottomLeftRadius: i === 0 ? "10px" : "",
+								borderBottomRightRadius: i === 0 ? "10px" : "",
 								borderTopRightRadius: i === info.data.length - 1 ? "10px" : "",
 								backgroundColor: i % 2 === 0 && "#ffffff",
 							}}>
