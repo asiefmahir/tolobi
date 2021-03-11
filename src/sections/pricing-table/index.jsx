@@ -19,7 +19,7 @@ const TableBody = styled.tbody`
 `;
 const TableHeadActive = styled.th`
 	background-color: #00a857;
-	padding: 1rem;
+	// padding: 1rem;
 `;
 
 const TableHeadItem = styled.th`

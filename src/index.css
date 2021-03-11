@@ -120,6 +120,7 @@ body {
 .active-tr {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color: #ffffff;
+	transform: scale(1);
 }
 
 .top-left {
@@ -141,10 +142,16 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	/* height:5rem; */
+
 	height: 5rem;
 }
 .table-row-item {
 	text-align: center;
+
+	padding: 1rem;
+	font-size:12px;
 	padding: 2rem;
 	font-size: 12px;
 }

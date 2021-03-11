@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { useState } from "react";
 
 import { icons } from "../../assets/index";
-
+const Td = styled.td`
+	height:6.5rem;
+`
 const Row = ({ data, index }) => {
 	const { title, checkers } = data;
 	const [active, setActive] = useState(false);
@@ -18,11 +20,11 @@ const Row = ({ data, index }) => {
 				setActive(false);
 				console.log(active);
 			}}>
-			<td
+			<Td
 				className={active ? "display-flex active-th table-row-item" : "display-flex greenish-th table-row-item"}>
 				<span>{title}</span>{" "}
 				<img src={active ? icons.ActiveAlert : icons.alert} alt={title} />
-			</td>
+			</Td>
 			{checkers.map((value, i) => (
 				<td
 					className={i % 2 === 0 ? "active-th table-row-item" : "table-row-item"}>

@@ -9,6 +9,7 @@ const Wrapper = styled.div`
 	width: 100%;
 	height: 25rem;
 	position: relative;
+	margin-top:3rem;
 `;
 
 const Overlay = styled.div`
@@ -42,7 +43,7 @@ const SubTitle = styled.h2`
 `;
 
 const ItemWrapper = styled.div`
-	margin-top: 3rem;
+	margin-top: 3.5rem;
 `;
 
 const WhyUseTolobi = ({ data }) => {
