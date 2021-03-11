@@ -1,5 +1,3 @@
-
-
 import HeroWrapper from "./HeroWrapper";
 import Overlay from "./Overlay";
 import Heading from "./Heading";

@@ -63,10 +63,11 @@ const Icon = styled.img`
 const InputField = styled.input`
 	& {
 		flex-grow: 1;
-		background-color: transparent;
+		background-color: rgba(0,0,0,0.0);
 		outline: none;
 		border: none;
 		margin-left:1rem;
+		height:100%;
 	}
 
 	&::placeholder {

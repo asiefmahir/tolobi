@@ -12,16 +12,14 @@ const TimelineContainer = styled.div`
 	flex-direction: column;
 	margin-top:6rem;
 `;
-const TimelineWrapper = styled.div`
-	margin-top:3rem;
-`
+
 const Timeline = ({ data }) => {
 	return (
 		<TimelineContainer>
 			<H3>Tolobi Work</H3>
 			<H6>How Our Process Works</H6>
 			<div className="circle"></div>
-			<TimelineWrapper>
+			<div className="timeline-wrapper">
 				{data.map((d, i) =>
 					i % 2 === 0 ? (
 						<OddItem rowData={d} index={i} />
@@ -29,7 +27,7 @@ const Timeline = ({ data }) => {
 						<EvenItem rowData={d} index={i} />
 					),
 				)}
-			</TimelineWrapper>
+			</div>
 			<div className="down-arrow">
 				<img src={icons.downArrow} alt=""/>
 			</div>

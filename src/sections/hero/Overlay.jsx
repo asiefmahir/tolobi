@@ -12,6 +12,7 @@ const Overlay = styled.div`
 		rgba(0, 0, 0, 0.74) 0.05%,
 		rgba(0, 0, 0, 0.74) 25.65%
 	);
+	display:flex;
 `;
 
 export default Overlay;
