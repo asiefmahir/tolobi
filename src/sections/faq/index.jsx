@@ -16,8 +16,8 @@ const FAQ = ({ data }) => {
 	return (
 		<Wrapper>
 			<Title>{title}</Title>
-			{items.map((item) => (
-				<Item item={item} />
+			{items.map((item, i) => (
+				<Item key={i} item={item} index={i} />
 			))}
 		</Wrapper>
 	);
