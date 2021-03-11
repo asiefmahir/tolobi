@@ -5,9 +5,12 @@ import { icons } from "../../assets";
 
 const FaqItem = styled.div`
 	display: flex;
+	justify-content:space-between;
 	with: 100%;
 	border-radius: 6px;
 	text-transform: capitalize;
+	margin-top:1rem;
+	padding:1.5rem;
 `;
 
 const Image = styled.img`
@@ -26,6 +29,10 @@ const Title = styled.p`
 
 const Excerpt = styled.p`
 	font-size: 0.8rem;
+	margin-left:1.5rem;
+	padding-bottom:1rem;
+	text-align:left;
+	line-height:27.29px;
 `;
 
 const Item = ({ item, index }) => {
@@ -34,7 +41,6 @@ const Item = ({ item, index }) => {
 
 	const handleClick = () => {
 		setActive((prev) => !prev);
-		console.log(active);
 	};
 
 	return (
@@ -43,7 +49,7 @@ const Item = ({ item, index }) => {
 			onClick={handleClick}>
 			<FaqItem>
 				<Title>
-					<Span>{index + 1}</Span>
+					<Span>{index + 1}. </Span>
 					{title}
 				</Title>
 				<Image src={active ? icons.minusIcon : icons.plusIcon} />
