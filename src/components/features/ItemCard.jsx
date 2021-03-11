@@ -12,8 +12,7 @@ const Image = styled.img`
 const Excerpt = styled.h4`
 	color: #000000;
 	font-weight: 700;
-	margin-top:1rem;
-	font-size:12px;
+	font-size: 17px;
 `;
 
 const ItemCard = ({ card }) => {
