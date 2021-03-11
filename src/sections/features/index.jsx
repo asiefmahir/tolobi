@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 import ItemCard from "./ItemCard";
+// import H3 from "../../components/H3";
+// import H6 from "../../components/H6";
+// import Container from "../../components/Container";
 
 const H6 = styled.h6`
 	font-weight: 500;
@@ -26,8 +29,8 @@ const Features = ({ features }) => {
 			<H6>Real Estate Agents</H6>
 			<H3>Who Use Tolobi</H3>
 			<CardHolder className='container'>
-				{features.map((feature) => (
-					<ItemCard card={feature} />
+				{features.map((feature, i) => (
+					<ItemCard key={i} card={feature} />
 				))}
 			</CardHolder>
 		</Container>
