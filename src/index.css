@@ -142,9 +142,20 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 }
 .table-row-item {
 	text-align: center;
+
+	/* height:5rem; */
+
+	height: 5rem;
+}
+.table-row-item {
+	text-align: center;
+
+	padding: 1rem;
+	font-size:12px;
 	padding: 2rem;
 	font-size: 12px;
 }
