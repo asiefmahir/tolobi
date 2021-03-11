@@ -26,8 +26,7 @@ const Wrapper = styled.div`
 	height: 25rem;
 	position: relative;
 	margin-top: 3rem;
-	text-align: center;
-	text-decoration: capitalize;
+
 `;
 
 const Overlay = styled.div`
@@ -37,19 +36,28 @@ const Overlay = styled.div`
 	height: 100%;
 	position: absolute;
 	background: rgba(0, 168, 87, 0.87);
+	text-align: center;
+	text-decoration: capitalize;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
 `;
 
 const FormWrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 60%;
+	width: 40%;
 	border: 1px solid #ffffff;
+	margin:3rem auto;
+	border-radius:10px;
 `;
 
 const Icon = styled.img`
 	width: 0.9375rem;
 	height: 0.70375rem;
+	margin-left: .5rem;
 `;
 
 const InputField = styled.input`
@@ -58,31 +66,37 @@ const InputField = styled.input`
 		background-color: transparent;
 		outline: none;
 		border: none;
+		margin-left:1rem;
 	}
 
 	&::placeholder {
-		color: #ffffff;
-		font-weight: 700;
+		color: #ddd;
+		font-weight: 400;
 		font-size: 0.875rem;
-		line-heighy: 19.87px;
+		line-height: 19.87px;
+		latter-spacing:10px;
 	}
 `;
 
 const FormButton = styled.button`
 	background-color: #ffffff;
 	color: #000000;
-	font-size: 0.9375;
 	margin: 1rem auto;
+	height:100%;
+	width:10rem;
+	border:none;
+	outline:none;
+	border-radius:0px 10px 10px 0px;
+	cursor:pointer;
 `;
 
 const Subscription = () => {
 	return (
-		<Wrapper url={images.bgImage} className='container'>
-			<Overlay>
+		<Wrapper url={images.bgImage}>
+			<Overlay  className='container'>
 				<Title>We manage your property like it’s our own</Title>
 				<SubTitle>Get in touch with us to learn more.</SubTitle>
 				<FormWrapper>
-					<form>
 						<Icon src={icons.messageIcon} />
 						<InputField
 							type='email'
@@ -90,7 +104,7 @@ const Subscription = () => {
 							placeholder='Enter your email address'
 						/>
 						<FormButton>Get Started</FormButton>
-					</form>
+
 				</FormWrapper>
 			</Overlay>
 		</Wrapper>
