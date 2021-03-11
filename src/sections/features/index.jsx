@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 import ItemCard from "./ItemCard";
-// import H3 from "../../components/H3";
-// import H6 from "../../components/H6";
-// import Container from "../../components/Container";
 
 const H6 = styled.h6`
 	font-weight: 500;
@@ -22,6 +19,7 @@ const CardHolder = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	margin-top: 1.8rem;
 `;
 const Features = ({ features }) => {
 	return (

@@ -13,7 +13,8 @@ import timelineIcon from './icons/timelineIcon.svg'
 import workStyle from './icons/workStyle.svg'
 import plusIcon from './icons/plusIcon.svg'
 import minusIcon from './icons/minusIcon.svg'
-
+import dollorBag from './icons/dollorBag.svg'
+import peopleIcon from './icons/peopleIcon.svg'
 const images = {
     bgImage,
     logo
@@ -31,7 +32,9 @@ const icons = {
     timelineIcon,
     workStyle,
     plusIcon,
-    minusIcon
+    minusIcon,
+    dollorBag,
+    peopleIcon
 }
 
 export { images, icons }
