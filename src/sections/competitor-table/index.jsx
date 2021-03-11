@@ -34,6 +34,9 @@ const Table = styled.table`
 	background: #ffffff;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
+	padding-right:3rem;
+	margin-top:2rem;
+	border-collapse:collapse;
 `;
 
 const CompetitorTable = ({ data }) => {
@@ -46,14 +49,14 @@ const CompetitorTable = ({ data }) => {
 				Onerent’s Basic Management plan.
 			</Paragraph>
 			<Table>
-				<tr>
-					<th>{data[0].title}</th>
-					<th>{data[0].competitor}</th>
-					<th>
+				<tr >
+					<th className="table-row-item"><h2>{data[0].title}</h2></th>
+					<th className="table-row-item"><h2>{data[0].competitor}</h2></th>
+					<th className="table-row-item">
 						<img src={data[0].tolobi} alt='' />
 					</th>
 				</tr>
-				{data.map((d) => (
+				{data.slice(1).map((d) => (
 					<Row rowData={d} />
 				))}
 			</Table>
