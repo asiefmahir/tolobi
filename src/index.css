@@ -115,6 +115,8 @@ body {
 
 .active-th {
 	background-color: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 .active-tr {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -139,5 +141,11 @@ body {
 .display-flex{
 	display:flex;
 	align-items:center;
-	justify-content: center;
+	justify-content: space-between;
+	height:5rem;
+}
+.table-row-item{
+	text-align: center;
+	padding: 1rem;
+	font-size:12px;
 }

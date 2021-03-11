@@ -18,14 +18,14 @@ const Row = ({ data, index }) => {
 				setActive(false);
 				console.log(active);
 			}}>
-			<th
-				className={active ? "display-flex active-th" : "display-flex greenish-th"}>
+			<td
+				className={active ? "display-flex active-th table-row-item" : "display-flex greenish-th table-row-item"}>
 				<span>{title}</span>{" "}
 				<img src={active ? icons.ActiveAlert : icons.alert} alt={title} />
-			</th>
+			</td>
 			{checkers.map((value, i) => (
-				<th
-					className={i % 2 === 0 && "active-th"}>
+				<td
+					className={i % 2 === 0 ? "active-th table-row-item" : "table-row-item"}>
 					{value === "tick" ? (
 						<img
 							src={
@@ -38,7 +38,7 @@ const Row = ({ data, index }) => {
 					) : (
 						<img src={icons.cross} alt='Not Available' />
 					)}
-				</th>
+				</td>
 			))}
 		</tr>
 	);

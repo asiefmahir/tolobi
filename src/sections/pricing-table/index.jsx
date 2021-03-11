@@ -9,7 +9,6 @@ const Table = styled.table`
 	border-collapse: collapse;
 	margin-top: 5rem;
 	border-radius: 10px;
-	background: #ddd;
 `;
 
 const TableBody = styled.tbody`
@@ -43,14 +42,15 @@ const Button = styled.button`
 	margin-top: 1rem;
 `;
 
-const TableRowItem = styled.td`
-	padding: 1rem;
-`;
+
+
 const TableRowHeadingActive = styled.h2`
 	color: white;
 	font-size:16px;
 	font-weight:700;
 `;
+
+
 const TableRowHeading = styled.h2`
 	font-size: 16px;
 	font-weight: 700;
@@ -84,15 +84,16 @@ const PricingTable = ({ datas, info }) => {
 				))}
 
 				<tr>
-					<TableRowItem>
+					<td className="table-row-item">
 						<p>{info.title}</p>
 						<p>
 							{" "}
 							<span>{info.subTitle}</span> <img src={icons.alert} alt='' />
 						</p>
-					</TableRowItem>
+					</td>
 					{info?.data.map((d, i) => (
-						<TableRowItem
+						<td
+							className="table-row-item"
 							style={{
 								borderBottomLeftRadius: i === 0 ? "10px" : "",
 								borderTopRightRadius: i === info.data.length - 1 ? "10px" : "",
@@ -100,7 +101,7 @@ const PricingTable = ({ datas, info }) => {
 							}}>
 							<p>{d.percentage}%</p>
 							<p>{d.excerpt}</p>
-						</TableRowItem>
+						</td>
 					))}
 				</tr>
 			</TableBody>
