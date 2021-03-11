@@ -17,7 +17,7 @@ const EvenItem = ({ rowData, index }) => {
 			</div>
 			<div class='timeline__content'>
 				<div class='timeline__title-desc'>
-					<h2 class='timeline__title'>{title}</h2>
+					<h3 class='timeline__title'>{title}</h3>
 					<p class='timeline__desc'>{excerpt}</p>
 				</div>
 

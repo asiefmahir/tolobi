@@ -10,7 +10,7 @@ const OddItem = ({ rowData, index }) => {
 					<img src={icon} alt='' />
 				</div>
 				<div className='timeline__title-desc'>
-					<h2 className='timeline__title'>{title}</h2>
+					<h3 className='timeline__title'>{title}</h3>
 					<p className='timeline__desc'>{excerpt}</p>
 				</div>
 			</div>
