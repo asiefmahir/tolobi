@@ -30,9 +30,7 @@ const Timeline = ({ data }) => {
 					),
 				)}
 			</TimelineWrapper>
-			<div className="down-arrow">
-				<img src={icons.downArrow} alt=""/>
-			</div>
+			<div className="down-arrow"></div>
 		</TimelineContainer>
 	);
 };
