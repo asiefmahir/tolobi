@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap");
-@import "./responsive.css";
+
 
 * {
 	margin: 0;
@@ -15,13 +15,7 @@ body {
 	width: 70%;
 	margin: auto;
 }
-/* .timeline-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-} */
-/*circle icon added here.*/
+
 
 .circle {
 	position: relative;
@@ -36,32 +30,8 @@ body {
 	background: #2f2f2f;
 	border-radius: 50%;
 }
-.timeline-wrapper {
-	margin-top: 3rem;
-}
-.timeline {
-	display: flex;
-	margin-top: 4.5rem;
-}
-.timeline__content {
-	width: 33%;
-	display: flex;
-	align-items: center;
-}
-.timeline__title-desc {
-}
-.timeline__title {
-	border-bottom: 2px solid #2f2f2f;
-	padding-bottom: 0.5rem;
-}
-.timeline__desc {
-	padding-top: 1rem;
-	font-size: 14px;
-}
-.timeline__curve-section {
-	position: relative;
-	width: 33%;
-}
+
+
 .svg-even {
 	position: absolute;
 	margin-left: 26%;
@@ -79,35 +49,7 @@ body {
 	stroke-dasharray: 223px;
 	stroke-dashoffset: -331px;
 }
-.timeline__curve-section::after {
-	content: "";
-	width: 3px;
-	height: 60%;
-	background: #2f2f2f;
-	position: absolute;
-	top: -92px;
-	left: 50%;
-}
-.timeline__middle-icon {
-	margin-top: -4px;
-	margin-left: 25%;
-}
-.round {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background: #00a857;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 30px;
-	color: white;
-	margin: 1.5rem;
-}
 
-.timeline__empty-section {
-	width: 33%;
-}
 
 .svg-odd {
 	position: absolute;
@@ -159,7 +101,6 @@ body {
 
 .active-th {
 	background-color: #ffffff;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .active-tr {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -172,7 +113,7 @@ body {
 	border-top-left-radius: 10px;
 }
 
-.top-righ {
+.top-right {
 	border-top-right-radius: 10px;
 }
 .bottom-left {
@@ -215,17 +156,10 @@ body {
 
 
 @media (max-width: 894px) {
-	.timeline__curve-section::after {
-		top: -105px;
-	}
-
 	.svg-even {
 		margin-left: 24.5%;
 	}
 
-	.svg-odd {
-		margin-left: 24.5%;
-	}
 
 	.timeline__middle-icon {
 		margin-left: 24%;
@@ -233,19 +167,7 @@ body {
 }
 
 @media (max-width: 860px) {
-
-	.timeline__curve-section::after {
-		height:71%;
-		top: -131px;
-	}
-
-	.timeline {
-		margin-top: 5rem;
-	}
 	.svg-even {
-		margin-left: 23.5%;
-	}
-	.svg-odd {
 		margin-left: 23.5%;
 	}
 }
@@ -266,17 +188,11 @@ body {
 	.timeline{
 		margin-top:6rem;
 	}
-	.timeline__curve-section::after {
-		height:78%;
-		top: -146px;
-	}
+
 	.timeline__middle-icon {
 		margin-left: 20%;
 	}
 	.svg-even {
-		margin-left: 20.5%;
-	}
-	.svg-odd {
 		margin-left: 20.5%;
 	}
 
@@ -289,7 +205,5 @@ body {
 		top: -31px;
 		left: -10.4px;
 	}
-	.hOXmkI {
-		height: 15.125rem;
-	}
+
 }
