@@ -137,7 +137,7 @@ export const timelineData = [
     },
     {
         icon: icons.timelineIcon,
-        title: 'Start Property Advertising 2',
+        title: 'Start Property Advertising',
         excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
     },
     {
@@ -147,27 +147,27 @@ export const timelineData = [
     },
     {
         icon: icons.timelineIcon,
-        title: 'Start Property Advertising 3',
+        title: 'Start Property Advertising',
         excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
     },
     {
         icon: icons.timelineIcon,
-        title: 'Start Property Advertising 4',
+        title: 'Start Property Advertising',
         excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
     },
     {
         icon: icons.timelineIcon,
-        title: 'Start Property Advertising 5',
+        title: 'Start Property Advertising',
         excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
     },
     {
         icon: icons.timelineIcon,
-        title: 'Start Property Advertising 6',
+        title: 'Start Property Advertising',
         excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
     },
     {
         icon: icons.timelineIcon,
-        title: 'Start Property Advertising 7',
+        title: 'Start Property Advertising',
         excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
     },
 ]
