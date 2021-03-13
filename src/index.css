@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap");
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -16,7 +15,6 @@ body {
 	margin: auto;
 }
 
-
 .circle {
 	position: relative;
 }
@@ -31,10 +29,9 @@ body {
 	border-radius: 50%;
 }
 
-
 .svg-even {
 	position: absolute;
-	margin-left: 26%;
+	margin-left: 27%;
 }
 .svg-even circle {
 	height: 100%;
@@ -50,10 +47,9 @@ body {
 	stroke-dashoffset: -331px;
 }
 
-
 .svg-odd {
 	position: absolute;
-	margin-left: 26%;
+	margin-left: 27%;
 }
 .svg-odd circle {
 	height: 100%;
@@ -84,11 +80,11 @@ body {
 	width: 3px;
 	background: #2f2f2f;
 }
-.down-arrow::before{
-	content:'\25BC';
+.down-arrow::before {
+	content: "\25BC";
 	position: absolute;
 	top: 0px;
-    left: -11.4px;
+	left: -11.4px;
 }
 
 .greenish-tr {
@@ -152,14 +148,10 @@ body {
 	transition: 0.5s;
 }
 
-
-
-
 @media (max-width: 894px) {
 	.svg-even {
 		margin-left: 24.5%;
 	}
-
 
 	.timeline__middle-icon {
 		margin-left: 24%;
@@ -173,7 +165,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
 	.circle {
 		position: relative;
 		margin-top: 3rem;
@@ -185,8 +176,8 @@ body {
 		left: -11px;
 		background: #2f2f2f;
 	}
-	.timeline{
-		margin-top:6rem;
+	.timeline {
+		margin-top: 6rem;
 	}
 
 	.timeline__middle-icon {
@@ -196,14 +187,12 @@ body {
 		margin-left: 20.5%;
 	}
 
-
 	.down-arrow::after {
 		top: -82.88px;
-		left:-3px;
+		left: -3px;
 	}
-	.down-arrow::before{
+	.down-arrow::before {
 		top: -31px;
 		left: -10.4px;
 	}
-
 }

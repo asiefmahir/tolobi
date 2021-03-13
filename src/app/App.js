@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <Hero image={images.bgImage} />
       <Features features={features} />
-      <PricingTable datas={datas} info={info} />
+      {/* <PricingTable datas={datas} info={info} /> */}
       <Timeline data={timelineData} />
       <CompetitorTable data={tableDataOfCompetitor} />
       <WhyUseTolobi data={whyUseTolobi} />
