@@ -24,9 +24,9 @@ const Timeline = ({ data }) => {
 			<TimelineWrapper>
 				{data.map((d, i) =>
 					i % 2 === 0 ? (
-						<OddItem rowData={d} index={i} />
-					) : (
 						<EvenItem rowData={d} index={i} />
+					) : (
+						<OddItem rowData={d} index={i} />
 					),
 				)}
 			</TimelineWrapper>

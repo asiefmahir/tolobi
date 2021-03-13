@@ -1,31 +1,44 @@
 import { icons } from "../../assets";
+import Timeline from './Timeline';
+import Empty from './Empty';
+import CurveSection from './CurveSection';
+import SvgOdd from './SvgOdd';
+import MiddleIconWrap from './MiddleIconWrap'
+import MiddleIcon from "./MiddleIcon";
+import MainContent from "./MainContent";
+import ContentTitle from "./ContentTitle";
+import ContentDesc from "./ContentDesc";
+import ContentTitleDescWrap from "./ContentTitleDescWrap";
 
-const OddItem = ({ rowData, index }) => {
+const EvenItem = ({ rowData, index }) => {
 	const { title, excerpt, icon } = rowData;
-
 	return (
-		<section className='timeline odd'>
-			<div className='timeline__content'>
-				<div className='timeline__icon'>
-					<img src={icon} alt='' />
-				</div>
-				<div className='timeline__title-desc'>
-					<h3 className='timeline__title'>{title}</h3>
-					<p className='timeline__desc'>{excerpt}</p>
-				</div>
-			</div>
-			<div className='timeline__curve-section'>
-				<svg className='svg-even'>
+		<Timeline>
+			<Empty></Empty>
+
+			<CurveSection>
+				<svg class='svg-odd'>
 					<circle cx='70' cy='70' r='70'></circle>
 					<circle cx='70' cy='70' r='70'></circle>
 				</svg>
-				<div className='timeline__middle-icon'>
-					<div className='round'>{index + 1}</div>
+				<MiddleIconWrap>
+					<MiddleIcon>{index + 1}</MiddleIcon>
+				</MiddleIconWrap>
+			</CurveSection>
+			<MainContent>
+				<ContentTitleDescWrap>
+					<ContentTitle>{title}</ContentTitle>
+					<ContentDesc>
+						{excerpt}
+					</ContentDesc>
+				</ContentTitleDescWrap>
+
+				<div class='timeline__icon'>
+					<img src={icon} alt='' />
 				</div>
-			</div>
-			<div className='timeline__empty-section'></div>
-		</section>
+			</MainContent>
+		</Timeline>
 	);
 };
 
-export default OddItem;
+export default EvenItem;
