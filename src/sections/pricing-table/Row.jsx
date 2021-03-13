@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { icons } from "../../assets/index";
 const Td = styled.td`
-	height:6.5rem;
+	height:5rem;
 `
 const Row = ({ data, index }) => {
 	const { title, checkers } = data;
