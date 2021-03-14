@@ -14,6 +14,12 @@ const MiddleIconWrap = styled.div`
         }
     }
 
+    @media (max-width: 860px) {
+        & {
+            margin-left: 24%;
+        }
+    }
+
     @media (max-width: 768px) {
         & {
             margin-left: 20.5%;

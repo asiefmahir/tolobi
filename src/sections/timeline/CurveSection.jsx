@@ -9,31 +9,29 @@ const CurveSection = styled.div`
     &::after {
         content: "";
         width: 3px;
-        height: 60%;
+        height: 100%;
         background: #2f2f2f;
         position: absolute;
-        top: -92px;
+        top: -156px;
         left: 50%;
     }
 
-    @media (max-width: 894px) {
-        &::after {
-            top: -105px;
-        }
-    }
+    // @media (max-width: 894px) {
+    //     &::after {
+    //         top: -171px;
+    //     }
+    // }
 
     @media (max-width: 860px) {
 
         &::after {
-            height:71%;
-            top: -131px;
+            top: -188px;
         }
     }
 
     @media (max-width: 768px) {
         &::after {
-            height: 66%;
-            top: -123px;
+            top: -190px;
         }
     }
 `
