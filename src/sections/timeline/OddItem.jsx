@@ -9,6 +9,7 @@ import MainContent from "./MainContent";
 import ContentTitle from "./ContentTitle";
 import ContentDesc from "./ContentDesc";
 import ContentTitleDescWrap from "./ContentTitleDescWrap";
+import CircleOdd from "./CircleOdd";
 
 const EvenItem = ({ rowData, index }) => {
 	const { title, excerpt, icon } = rowData;
@@ -28,9 +29,8 @@ const EvenItem = ({ rowData, index }) => {
 			<MainContent>
 				<ContentTitleDescWrap>
 					<ContentTitle>{title}</ContentTitle>
-					<ContentDesc>
-						{excerpt}
-					</ContentDesc>
+					<CircleOdd></CircleOdd>
+					<ContentDesc>{excerpt}</ContentDesc>
 				</ContentTitleDescWrap>
 
 				<div class='timeline__icon'>

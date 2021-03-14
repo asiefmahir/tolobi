@@ -148,6 +148,48 @@ body {
 	transition: 0.5s;
 }
 
+
+@media (max-width: 1440px) {
+	.svg-even {
+		margin-left: 26%;
+	}
+
+	.svg-odd {
+		margin-left: 26%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.svg-even {
+		margin-left: 27%;
+	}
+
+	.svg-odd {
+		margin-left: 27%;
+	}
+
+}
+
+
+
+@media (max-width: 910px) {
+	.svg-even {
+		margin-left: 25%;
+	}
+
+	.svg-odd {
+		margin-left: 25%;
+	}
+
+	.svg-even circle:nth-child(2) {
+		stroke: #2f2f2f;
+		stroke-dasharray: 222px;
+		stroke-dashoffset: -331px;
+	}
+}
+
+
+
 @media (max-width: 894px) {
 	.svg-even {
 		margin-left: 24.5%;
@@ -156,6 +198,24 @@ body {
 	.timeline__middle-icon {
 		margin-left: 24%;
 	}
+}
+
+
+@media (max-width: 884px) {
+	.svg-even {
+		margin-left: 24%;
+	}
+
+	.svg-odd {
+		margin-left: 24.8%;
+	}
+
+	.svg-even circle:nth-child(2) {
+		stroke-dasharray: 221px;
+		stroke-dashoffset: -330px;
+	}
+	
+	
 }
 
 @media (max-width: 860px) {
@@ -180,11 +240,17 @@ body {
 		margin-top: 6rem;
 	}
 
-	.timeline__middle-icon {
-		margin-left: 20%;
-	}
 	.svg-even {
-		margin-left: 20.5%;
+		margin-left: 21%;
+	}
+
+	.svg-odd {
+		margin-left: 21%;
+	}
+
+	.svg-even circle:nth-child(2) {
+		stroke-dasharray: 217px;
+		stroke-dashoffset: -328px;
 	}
 
 	.down-arrow::after {

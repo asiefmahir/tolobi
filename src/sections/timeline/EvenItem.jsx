@@ -8,6 +8,7 @@ import MainContent from "./MainContent";
 import ContentTitle from "./ContentTitle";
 import ContentDesc from "./ContentDesc";
 import ContentTitleDescWrap from "./ContentTitleDescWrap";
+import CircleEven from "./CircleEven";
 
 const OddItem = ({ rowData, index }) => {
 	const { title, excerpt, icon } = rowData;
@@ -15,11 +16,12 @@ const OddItem = ({ rowData, index }) => {
 	return (
 		<Timeline>
 			<MainContent>
-				<div className='timeline__icon'>
+				<div>
 					<img src={icon} alt='' />
 				</div>
 				<ContentTitleDescWrap>
 					<ContentTitle>{title}</ContentTitle>
+					<CircleEven></CircleEven>
 					<ContentDesc>{excerpt}</ContentDesc>
 				</ContentTitleDescWrap>
 			</MainContent>
