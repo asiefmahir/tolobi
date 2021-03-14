@@ -161,11 +161,11 @@ body {
 
 @media (max-width: 1024px) {
 	.svg-even {
-		margin-left: 27%;
+		margin-left: 26%;
 	}
 
 	.svg-odd {
-		margin-left: 27%;
+		margin-left: 26%;
 	}
 
 }
@@ -201,9 +201,10 @@ body {
 }
 
 
-@media (max-width: 884px) {
+
+@media (max-width: 860px) {
 	.svg-even {
-		margin-left: 24%;
+		margin-left: 23%;
 	}
 
 	.svg-odd {
@@ -211,17 +212,11 @@ body {
 	}
 
 	.svg-even circle:nth-child(2) {
-		stroke-dasharray: 221px;
+		stroke-dasharray: 224px;
 		stroke-dashoffset: -330px;
 	}
 	
 	
-}
-
-@media (max-width: 860px) {
-	.svg-even {
-		margin-left: 23.5%;
-	}
 }
 
 @media (max-width: 768px) {
