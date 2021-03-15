@@ -1,117 +1,97 @@
-// import { useState } from "react";
+import { useState } from "react";
+import styled from "styled-components";
 
-// import styled from "styled-components";
-// import { icons } from "../../assets/index";
+import MainContainer from "../../components/MainContainer";
+import { icons } from "../../assets/index";
+import Row from "./Row";
 
-// import Row from "./Row";
+const Table = styled.div`
+	width: 100%;
+	border-collapse: collapse;
+	padding: 1rem;
+`;
+const TableHeading = styled.div`
+	padding: 2rem 2rem 0.5rem 2rem;
+	background-color: ${(props) => (props.even ? "#ffffff" : "#00a857")};
+	color: ${(props) => (props.even ? "#000000" : "#ffffff")};
+	width: 25%;
+`;
+const TableBody = styled.div`
+	background-color: #00a857;
+	border-radius: 0.8rem;
+	padding: 1rem;
+`;
 
-// const Table = styled.table`
-// 	border-collapse: collapse;
-// 	margin-top: 5rem;
-// 	border-radius: 10px;
-// `;
+export const TableDetails = styled.div`
+	background-color: ${(props) =>
+		props.even || props.active ? "#ffffff" : "#00a857"};
+	color: ${(props) => (props.active ? "#00a857" : "#ffffff")};
+	width: 25%;
+	height: 5rem;
+	border-top-left-radius: ${(props) => props.firstStart && "10px"};
+	border-top-right-radius: ${(props) => props.firstEnd && "10px"};
+	border-bottom-left-radius: ${(props) => props.lastStart && "10px"};
+	border-bottom-right-radius: ${(props) => props.lastEnd && "10px"};
+	display: ${(props) => props.flex && "flex"};
+	padding: 1rem;
+`;
+export const TableRow = styled.div`
+	box-shadow: ${(props) => props.active && "0px 4px 4px rgba(0, 0, 0, 0.25)"};
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+	background-color: ${(props) => props.active && "#ffffff !important"};
+	border-radius: ${(props) => props.active && "10000000rem"};
+	transform: ${(props) => props.active && "scale(1)"};
+	color: ${(props) => props.active && "#008a57"};
+	// border: 1px solid reds
+`;
 
-// const TableBody = styled.tbody`
-// 	background-color: #00a857;
-// 	border-radius: 10px;
-// 	width: 60rem;
-// 	padding: 1rem;
-// `;
-// const TableHeadActive = styled.th`
-// 	background-color: #00a857;
-// 	// padding: 1rem;
-// `;
+const Button = styled.button`
+	width: 7.875rem;
+	height: 2.25rem;
+	background: #f5f1ff;
+	color: #00a857;
+	text-align: center;
+	margin-left: 1rem;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	margin-top: 1rem;
+`;
 
-// const TableHeadItem = styled.th`
-// 	padding: 2rem 2rem 0.5rem 2rem;
-// `;
+export const Image = styled.img`
+	width: ${(props) => props.width};
+`;
 
-// const TableHeadItemActive = styled.td`
-// 	font-size: 16px;
-// 	font-weight: 700;
-// `;
-// const Button = styled.button`
-// 	width: 7.875rem;
-// 	height: 2.25rem;
-// 	background: #f5f1ff;
-// 	color: #00a857;
-// 	text-align: center;
-// 	border: none;
-// 	outline: none;
-// 	border-radius: 4px;
-// 	margin-top: 1rem;
-// `;
+const Pricingtable = ({ datas, info }) => {
+	const { title, subTitle, headings, data } = info;
+	const [active, setActive] = useState(false);
 
-// const TableRowHeadingActive = styled.h2`
-// 	color: white;
-// 	font-size: 16px;
-// 	font-weight: 700;
-// `;
+	return (
+		<MainContainer>
+			<Table>
+				<TableRow>
+					<TableHeading even></TableHeading>
+					{headings.map((heading, index) => (
+						<>
+							<TableHeading even={index % 2 === 0}>
+								{heading}
+								<Button>Sign Up</Button>
+							</TableHeading>
+						</>
+					))}
+				</TableRow>
 
-// const TableRowHeading = styled.h2`
-// 	font-size: 16px;
-// 	font-weight: 700;
-// `;
+				<TableBody>
+					{datas.map((data) => (
+						<Row data={data} datas={datas} />
+						
+					))}
+				</TableBody>
+			</Table>
+		</MainContainer>
+	);
+};
 
-// const PricingTable = ({ datas, info }) => {
-// 	const [active, setActive] = useState(false);
-// 	return (
-// 		<Table className='container'>
-// 			<tr>
-// 				<TableHeadItem></TableHeadItem>
-// 				<TableHeadItem>
-// 					<TableRowHeading>Basic (Beta)</TableRowHeading>
-// 					<Button>Sign Up</Button>
-// 				</TableHeadItem>
-// 				<TableHeadActive>
-// 					<TableRowHeadingActive>Rental Assistance</TableRowHeadingActive>
-// 					<Button>Sign Up</Button>
-// 				</TableHeadActive>
-// 				<TableHeadItem>
-// 					<TableRowHeading>Rental Assistance (Pro)</TableRowHeading>
-// 					<Button>Sign Up</Button>
-// 				</TableHeadItem>
-// 			</tr>
-// 			<TableBody>
-// 				{datas.map((data, i) => (
-// 					<Row key={i} data={data} index={i} />
-// 				))}
-
-// 				<tr
-// 					onMouseOver={() => setActive(true)}
-// 					onMouseLeave={() => setActive(false)}
-// 					className={active && "active-tr"}>
-// 					<td className='table-row-item'>
-// 						<p>{info.title}</p>
-// 						<p>
-// 							{" "}
-// 							<span>{info.subTitle}</span>{" "}
-// 							<img src={active ? icons.ActiveAlert : icons.alert} alt='' />
-// 						</p>
-// 					</td>
-// 					{info?.data.map((d, i) => (
-// 						<td
-// 							className='table-row-item'
-// 							style={{
-// 								borderBottomRightRadius: i === 0 ? "10px" : "",
-// 								borderTopRightRadius: i === info.data.length - 1 ? "10px" : "",
-// 								backgroundColor: i % 2 === 0 && "#ffffff",
-// 							}}>
-// 							<p>{d.percentage}%</p>
-// 							<p>{d.excerpt}</p>
-// 						</td>
-// 					))}
-// 				</tr>
-// 			</TableBody>
-// 		</Table>
-// 	);
-// };
-
-// export default PricingTable;
-
-
-const Pricingtable = () => {
-	
-}
-
-export default Pricingtable
+export default Pricingtable;

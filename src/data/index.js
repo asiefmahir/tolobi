@@ -1,4 +1,4 @@
-import {images, icons } from '../assets'
+import { images, icons } from '../assets'
 
 
 export const features = [
@@ -19,9 +19,10 @@ export const features = [
     }
 ]
 export const datas = [
+
     {
         title: `Access to Tolobi's Dashboard`,
-        checkers: ['tick', 'cross', 'tick']
+        checkers: ['tick', 'tick', 'tick']
     },
     {
         title: `Access to Tolobi's Dashboard`,
@@ -29,13 +30,30 @@ export const datas = [
     },
     {
         title: `Access to Tolobi's Dashboard`,
-        checkers: ['tick', 'cross', 'tick']
+        checkers: ['tick', 'tick', 'tick']
+    },
+    {
+        title: `Access to Tolobi's Dashboard`,
+        checkers: ['tick', 'tick', 'tick']
+    },
+    {
+        title: `Access to Tolobi's Dashboard`,
+        checkers: ['tick', 'tick', 'tick']
+    },
+    {
+        title: `Access to Tolobi's Dashboard`,
+        checkers: ['tick', 'tick', 'tick']
+    },
+    {
+        title: `Access to Tolobi's Dashboard`,
+        checkers: ['tick', 'tick', 'tick']
     }
 ]
 
 export const info = {
     title: 'TENANT PLACEMENT FEE',
     subTitle: 'Tax Deductible',
+    headings: [`Access to Tolobi's dashboard`, `Access to Tolobi's dashboard`, `Access to Tolobi's dashboard`],
     data: [
         {
             percentage: '75',
@@ -130,6 +148,31 @@ export const faqData = {
 };
 
 export const timelineData = [
+    {
+        icon: icons.timelineIcon,
+        title: 'Start Property Advertising',
+        excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+    },
+    {
+        icon: icons.timelineIcon,
+        title: 'Start Property Advertising',
+        excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+    },
+    {
+        icon: icons.timelineIcon,
+        title: 'Start Property Advertising',
+        excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+    },
+    {
+        icon: icons.timelineIcon,
+        title: 'Start Property Advertising',
+        excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+    },
+    {
+        icon: icons.timelineIcon,
+        title: 'Start Property Advertising',
+        excerpt: 'Your unit will be advertised across various internet listing sites, classified and social media.'
+    },
     {
         icon: icons.timelineIcon,
         title: 'Start Property Advertising',
