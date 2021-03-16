@@ -4,14 +4,14 @@ import CardHolder from "./CardHolder";
 import H6 from "./H6";
 import H3 from "./H3";
 
-const Features = ({ features }) => {
+const Features = ({ features, mobileView }) => {
 	return (
 		<Container>
 			<H6>Real Estate Agents</H6>
 			<H3>Who Use Tolobi</H3>
-			<CardHolder className='container'>
+			<CardHolder mobileView={mobileView} className='container'>
 				{features.map((feature, i) => (
-					<ItemCard key={i} card={feature} />
+					<ItemCard mobileView={mobileView} key={i} card={feature} />
 				))}
 			</CardHolder>
 		</Container>

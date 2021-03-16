@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 const Card = styled.div`
-	width: 24%;
-	height: 13.125rem;
+	width: ${(props) => (props.mobileView ? "100%" : "24%")};
+	height: ${(props) => (props.mobileView ? "auto" : "13.125rem")};
 	background-color: #ffffff;
 	border-radius: 6px;
 	text-align: center;
 	padding: 1rem;
+	margin-top: ${(props) => props.mobileView && "1rem"};
 `;
 
 const Image = styled.img`
@@ -29,10 +30,10 @@ const Excerpt = styled.p`
 	margin-top: 1rem;
 `;
 
-const ItemCard = ({ card }) => {
+const ItemCard = ({ card, mobileView }) => {
 	const { icon, title, excerpt } = card;
 	return (
-		<Card>
+		<Card mobileView={mobileView}>
 			<Image src={icon} alt='' />
 
 			<Title>{title}</Title>

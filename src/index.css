@@ -141,13 +141,14 @@ body {
 .non-active-faq-item {
 	box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
 	background: #ffffff;
+	border-radius: 0.5rem;
 }
 
 .active-faq-item {
 	background-color: #e4fff2;
 	transition: 0.5s;
+	border-radius: 0.5rem;
 }
-
 
 @media (max-width: 1440px) {
 	.svg-even {
@@ -167,10 +168,7 @@ body {
 	.svg-odd {
 		margin-left: 26%;
 	}
-
 }
-
-
 
 @media (max-width: 910px) {
 	.svg-even {
@@ -188,8 +186,6 @@ body {
 	}
 }
 
-
-
 @media (max-width: 894px) {
 	.svg-even {
 		margin-left: 24.5%;
@@ -199,8 +195,6 @@ body {
 		margin-left: 24%;
 	}
 }
-
-
 
 @media (max-width: 860px) {
 	.svg-even {
@@ -215,8 +209,6 @@ body {
 		stroke-dasharray: 224px;
 		stroke-dashoffset: -330px;
 	}
-	
-	
 }
 
 @media (max-width: 768px) {

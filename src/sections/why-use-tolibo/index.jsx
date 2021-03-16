@@ -7,24 +7,26 @@ const Wrapper = styled.div`
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	height: 25rem;
+	height: ${(props) => (props.mobileView ? "auto" : "25rem")};
 	position: relative;
-	margin-top:3rem;
+	margin-top: 3rem;
 `;
 
 const Overlay = styled.div`
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: ${(props) => (props.mobileView ? "" : "100%")};
 	position: absolute;
 	background: rgba(0, 168, 87, 0.87);
+	padding: 1rem;
 `;
 
 const CardWrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-direction: ${(props) => (props.mobileView ? "column" : "row")};
 `;
 const Title = styled.h5`
 	color: #ffffff;
@@ -46,17 +48,19 @@ const ItemWrapper = styled.div`
 	margin-top: 3.5rem;
 `;
 
-const WhyUseTolobi = ({ data }) => {
+const WhyUseTolobi = ({ data, mobileView }) => {
 	const { title, subTitle, bgImage, cards } = data;
 	return (
 		<Wrapper url={bgImage}>
-			<Overlay>
+			<Overlay mobileView={mobileView}>
 				<ItemWrapper>
 					<Title>{title}</Title>
 					<SubTitle>{subTitle}</SubTitle>
-					<CardWrapper className='container'>
+					<CardWrapper
+						mobileView={mobileView}
+						className={mobileView ? "" : "container"}>
 						{cards.map((card) => (
-							<ItemCard card={card} />
+							<ItemCard mobileView={mobileView} card={card} />
 						))}
 					</CardWrapper>
 				</ItemWrapper>

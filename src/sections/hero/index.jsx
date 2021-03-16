@@ -4,18 +4,18 @@ import Heading from "./Heading";
 import Span from "./Span";
 import Paragraph from "./Paragraph";
 
-const Hero = ({ image }) => {
+const Hero = ({ image, mobileView }) => {
 	return (
-		<HeroWrapper url={image}>
+		<HeroWrapper url={image} mobileView={mobileView}>
 			<Overlay>
 				<div className='container'>
-					<Heading>
+					<Heading mobileView={mobileView}>
 						Everything You <br /> Need to{" "}
 						<Span>
 							Rent out <br /> Your Home
 						</Span>
 					</Heading>
-					<Paragraph>
+					<Paragraph mobileView={mobileView}>
 						Whatever your needs may be, we've got you covered. It all <br />{" "}
 						depends on how hands-off you want to be!
 					</Paragraph>

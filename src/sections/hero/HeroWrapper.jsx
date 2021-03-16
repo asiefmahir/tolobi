@@ -6,7 +6,7 @@ const HeroWrapper = styled.div`
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	height: 65vh;
+	height: ${(props) => (props.mobileView ? "75vh" : "65vh")};
 	position: relative;
 `;
 
