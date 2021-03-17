@@ -5,7 +5,8 @@ import Features from "../sections/features";
 import FAQ from "../sections/faq";
 import Subscription from "../sections/subscription";
 import MobileCard from "../sections/timeline-for-mobile";
-
+import CompetitorTableForMobileVersion from "../MobileSections/competitor-table";
+import Pricingtable from "../MobileSections/pricing-table";
 import {
 	features,
 	datas,
@@ -21,7 +22,9 @@ const MobileView = ({ mobileView }) => {
 		<>
 			<Hero mobileView={mobileView} image={images.bgImage} />
 			<Features mobileView={mobileView} features={features} />
-			<MobileCard data={timelineData} />
+			<Pricingtable data={datas} />
+			<MobileCard mobileView={mobileView} data={timelineData} />
+			<CompetitorTableForMobileVersion data={tableDataOfCompetitor} />
 			<WhyUseTolobi mobileView={mobileView} data={whyUseTolobi} />
 			<FAQ mobileView={mobileView} data={faqData} />
 			<Subscription mobileView={mobileView} />

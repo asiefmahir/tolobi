@@ -19,6 +19,11 @@ export const features = [
     }
 ]
 export const datas = [
+    [
+        'Basic Beta',
+        'Rental Assistance',
+        'Rental Assistance Pro'
+    ],
 
     {
         title: `Access to Tolobi's Dashboard`,
@@ -90,7 +95,18 @@ export const tableDataOfCompetitor = [
         title: 'Mark Up On Repairs',
         competitor: '100%',
         tolobi: '0%'
-    }
+    },
+    {
+        title: 'Tenant Placement Fee',
+        competitor: {
+            percentage: '100%',
+            condition: 'Of First Month’s Rent'
+        },
+        tolobi: {
+            percentage: '40%',
+            condition: 'Of First Month’s Rent'
+        }
+    },
 ]
 
 export const whyUseTolobi = {

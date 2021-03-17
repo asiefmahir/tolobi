@@ -7,7 +7,6 @@ import Row from "./Row";
 
 const Table = styled.div`
 	width: 100%;
-	border-collapse: collapse;
 	padding: 1rem;
 `;
 const TableHeading = styled.div`
@@ -16,7 +15,7 @@ const TableHeading = styled.div`
 	color: ${(props) => (props.even ? "#000000" : "#ffffff")};
 	width: 25%;
 `;
-const TableBody = styled.div`
+export const TableBody = styled.div`
 	background-color: #00a857;
 	border-radius: 0.8rem;
 	padding: 1rem;
@@ -86,7 +85,6 @@ const Pricingtable = ({ datas, info }) => {
 				<TableBody>
 					{datas.map((data) => (
 						<Row data={data} datas={datas} />
-						
 					))}
 				</TableBody>
 			</Table>

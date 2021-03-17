@@ -14,13 +14,13 @@ const CardItem = styled.div`
 	border-radius: 0.5rem;
 	overflow: hidden;
 
-	@media (max-width: 330px) {
-		padding: 0.8rem;
-	}
+	// @media (max-width: 330px) {
+	// 	padding: 0.8rem;
+	// }
 
-	@media (max-width: 320px) {
-		padding: 0.5rem;
-	}
+	// @media (max-width: 320px) {
+	// 	padding: 0.5rem;
+	// }
 `;
 
 const Image = styled.img`
@@ -36,6 +36,7 @@ const ImageTitleWrap = styled.div`
 const Title = styled.p`
 	color: #000000;
 	font-weight: bold;
+	text-align: left;
 `;
 
 const Excerpt = styled.p`
@@ -62,39 +63,9 @@ const Span = styled.span`
 	color: #fff;
 	font-size: 1.5rem;
 	font-weight: 700;
-	margin-left: 66%;
+	margin-left: 73%;
 	display: flex;
 	margin-top: 13%;
-
-	@media (max-width: 767px) {
-		margin-left: 75%;
-	}
-
-	@media (max-width: 500px) {
-		margin-left: 68%;
-		margin-top: 15%;
-	}
-
-	@media (max-width: 400px) {
-		margin-left: 60%;
-		margin-top: 15%;
-	}
-
-	@media (max-width: 340px) {
-		margin-left: 40%;
-		margin-top: 20%;
-	}
-
-	@media (max-width: 320px) {
-		margin-left: 50%;
-		margin-top: 20%;
-	}
-
-	@media (max-width: 320px) {
-		margin-left: 40%;
-		margin-top: 35%;
-		font-size: 1rem;
-	}
 `;
 
 const ItemCard = ({ item, index, mobileView }) => {

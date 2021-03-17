@@ -10,7 +10,7 @@ const Title = styled.h2`
 `;
 const Wrapper = styled.div`
 	text-align: center;
-	margin: 38rem 1rem 1rem 1rem;
+	margin: 32rem 1rem 1rem 1rem;
 `;
 
 const ItemWrapper = styled.div`
