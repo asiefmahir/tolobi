@@ -1,12 +1,9 @@
 import styled from "styled-components";
-
 import { TableBody } from "../../sections/pricing-table";
 import { icons } from "../../assets/index";
-
 const Wrapper = styled.div`
 	margin-top: 1rem;
 `;
-
 const ItemDetails = styled.div`
 	background-color: #00a857;
 	color: #ffffff;
@@ -19,17 +16,27 @@ const ItemDetails = styled.div`
 	padding: 1rem;
 `;
 const Title = styled.p`
-	font-size: 1.8rem;
-	font-weight: 700;
-	line-height: 1.315625rem;
-	border-bottom: 1px solid #30c97f;
-	padding-bottom: 2rem;
+	& {
+		font-size: 1.8rem;
+		font-weight: 700;
+		line-height: 1.315625rem;
+		border-bottom: 1px solid #30c97f;
+		padding-bottom: 2rem;
+	}
+	@media (max-width: 565px) {
+		& {
+			font-size: 1rem;
+		}
+	}
+	@media (max-width: 371px) {
+		& {
+			padding-bottom: 1rem;
+		}
+	}
 `;
-
 const Image = styled.img`
 	width: 2rem;
 `;
-
 const TitleCardButton = styled.button`
 	width: 12.3125rem;
 	height: 3rem;
